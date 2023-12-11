@@ -5,4 +5,3 @@ for num1 in range(8):
         print('{0}{1}'.format(num1, num2), end=", ")
 
 print(89)
-
