@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+flag=[True, True, False, False, False, False, False, False, False, False]
+print("01",end="")
+for i in range(2,99):
+    if flag[i%10] == False or flag[int(i/10)] == False:
+        print(f", {str(i).zfill(2)}",end="")
+        flag[i%10] = True
+        flag[int(i/10)]=True
+print("")
