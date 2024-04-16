@@ -6,9 +6,8 @@ if (__name__ == "__main__"):
     elif (len(sys.argv) == 2):
         print("1 argument:\n1: {}".format(sys.argv[1]))
     else:
-        list_len = len(sys.argv)
-        print("{} arguments:".format(list_len))
+        print("{} arguments:".format(len(sys.argv)))
         indx = 1
-        while indx < list_len:
+        while indx < len(sys.argv):
             print("{}: {}".format(indx, sys.argv[indx]))
             indx += 1
