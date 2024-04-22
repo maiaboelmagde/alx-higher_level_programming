@@ -1,14 +1,12 @@
-#!/bin/usr/python3
-''' function that prints x elements of a list.'''
-
+#!/usr/bin/python3
 
 def safe_print_list(my_list=[], x=0):
-    idx = 0
-    while x > idx:
+    sum_total = 0
+    for i in range(x):
         try:
-            print(f"{my_list[idx]}", end='')
-            idx += 1
-        except Exception:
+            print(f"{my_list[i]}", end="")
+            sum_total += 1
+        except IndexError:
             break
     print()
-    return idx
+    return(sum_total)
