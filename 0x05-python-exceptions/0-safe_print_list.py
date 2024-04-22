@@ -8,6 +8,8 @@ def safe_print_list(my_list=[], x=0):
         while x > idx:
             print(my_list[idx], end='')
             idx += 1
-    finally:
+        print()
+        return idx
+    except Exception:
         print()
         return idx
