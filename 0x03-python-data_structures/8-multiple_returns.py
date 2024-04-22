@@ -8,4 +8,7 @@ and its first character
 
 
 def multiple_returns(sentence):
-    return (len(sentence), sentence[0])
+    if sentence == "":
+        return 0, None
+    else:
+        return len(sentence), sentence[0]
